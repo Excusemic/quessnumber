@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(51,57,129);
+    background: linear-gradient(315deg, rgba(51,57,129,1) 0%, rgba(110,161,109,0.8629201680672269) 50%, rgba(252,176,69,1) 100%);
+}
+html {
+    height: 100%;
+}
+.main-content {
+    width: 80%;
+    margin: auto;
+}
+.main-content .content-header {
+    text-align: center;
+    background-image: linear-gradient(rgb(168, 168, 168), rgba(0, 0, 0, 0.1));
+    box-shadow: 0 30px 40px rgba(0,0,0,.4);
+    margin: 2em auto;
+;
+}
+.main-content .content-header h4 {
+    font-size: 2em;
+    margin-bottom: .4em;
+}
+.main-content .game-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.game-content .cards {
+    flex-grow: 2;
+    display: grid;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+.procenat-uspesnosti {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: .6em 0em;
+    background-image: linear-gradient(rgb(168, 168, 168), rgba(0, 0, 0, 0.1));
+
+}
+.game-content .info {
+    margin-top: 5px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.game-content .info div {
+    background-image: linear-gradient(rgb(168, 168, 168), rgba(0, 0, 0, 0.1));
+    flex-grow: 1;
+    padding: .4em 0em;
+    border: 1px solid #fff;
+    text-align: center;
+    align-self: flex-start;
+}
+.game-content .info div p {
+    margin: 4px 0px;
+    border-bottom: 1px solid #fff;
+}
+.game-content .info div h3 {
+    display: inline-block;
+    font-size: 1em;
+}
+.oneCard {
+    content: '';
+    min-width: 30px;
+    min-height: 30px;
+    margin: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightgray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+    
+}
+.missedCardAfter {
+    background-color: rgb(77, 77, 77);
+}
+.missedCardBefore {
+    background-color: rgb(131, 131, 131);
+}
+.correctCard {
+    background-color: rgba(253, 23, 23, 0.815);
+}
+.pokusaj p {
+    display: block;
+}
